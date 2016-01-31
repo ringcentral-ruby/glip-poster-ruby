@@ -35,7 +35,7 @@ module Glip
     def send_message(message, opts={})
       return @http.post do |req|
         req.url @webhook_url
-        req.body = @options.merge(opts).merge({body: message})
+        req.body = @options.merge(opts).merge(body: message)
       end
     end
   end
