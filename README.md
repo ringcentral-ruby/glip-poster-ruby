@@ -33,6 +33,8 @@ $ gem install glip-poster
 First you have to initialize your poster and then you can use `send_message` to send your message. You must have a webhook URL configured in Glip using the "Glip Webhooks" integration.
 
 ```ruby
+require 'glip-poster'
+
 poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
 poster.send_message('Hello World!') # Faraday::Response
 ```
