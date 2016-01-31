@@ -6,7 +6,7 @@ version = $1
 Gem::Specification.new do |s|
   s.name        = 'glip-poster'
   s.version     = version
-  s.date        = '2016-01-30'
+  s.date        = '2016-01-31'
   s.summary     = 'Glip Poster - Ruby SDK for post messages via Glip webhooks'
   s.description = 'A Ruby SDK for post messages via Glip webhooks'
   s.authors     = ['John Wang']

@@ -3,7 +3,7 @@ require 'faraday_middleware'
 
 module Glip
   class Poster
-    VERSION = '0.0.2'
+    VERSION = '0.0.3'
     GLIP_WEBHOOK_BASE_URL = 'https://hooks.glip.com/webhook/'
 
     attr_reader :webhook_url
