@@ -52,8 +52,7 @@ poster.send_message('Hi there!') # Faraday::Response
 You can send text in Markdown:
 
 ```ruby
-poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
-poster.send_message('* Location: [The Funky Buddha Lounge](http://www.thefunkybuddha.com)\n*Beer Advocate Rating: [99](http://tinyurl.com/psf4uzq)')
+poster.send_message("* Location: [The Funky Buddha Lounge](http://www.thefunkybuddha.com)\n*Beer Advocate Rating: [99](http://tinyurl.com/psf4uzq)")
 ```
 
 You can use an options array if you don't want to use the default settings.
@@ -64,7 +63,6 @@ options = {
   activity: 'Activity Alert',
   title: 'A New Incoming Message Has Been Received'
 }
-poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
 poster.send_message('Hi there!', options)
 ```
 
