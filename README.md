@@ -38,8 +38,6 @@ This gem will use a incoming webHook integration on Glip. First, you need to cre
 https://hooks.glip.com/webhook/11112222-3333-4444-5555-666677778888
 ```
 
-You can instantiate the `Glip::Poster` class with the full URL or the webhook ID (GUID) only.
-
 ## Usage
 
 First you have to initialize your poster and then you can use `send_message` to send your message. You must have a webhook URL configured in Glip using the "Glip Webhooks" integration.
@@ -47,7 +45,7 @@ First you have to initialize your poster and then you can use `send_message` to 
 ```ruby
 require 'glip-poster'
 
-poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
+poster = Glip::Poster.new(YOUR_WEBHOOK_URL) # or YOUR_WEBHOOK_ID (GUID)
 poster.send_message('Hi there!') # Faraday::Response
 ```
 
