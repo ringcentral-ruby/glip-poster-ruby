@@ -30,7 +30,7 @@ $ gem install glip-poster
 
 ## Usage
 
-First you have to initialize your poster and then you can use `send_message` to send your message.
+First you have to initialize your poster and then you can use `send_message` to send your message. You must have a webhook URL configured in Glip using the "Glip Webhooks" integration.
 
 ```ruby
 poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
