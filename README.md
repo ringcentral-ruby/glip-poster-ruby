@@ -1,5 +1,5 @@
 Glip Poster
-========================
+===========
 
 [![Gem Version][gem-version-svg]][gem-version-link]
 [![Build Status][build-status-svg]][build-status-link]
@@ -36,7 +36,7 @@ First you have to initialize your poster and then you can use `send_message` to 
 require 'glip-poster'
 
 poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
-poster.send_message('Hello World!') # Faraday::Response
+poster.send_message('Hi there!') # Faraday::Response
 ```
 
 You can send text in Markdown:
@@ -55,7 +55,7 @@ options = {
   :title => "A New Incoming Message Has Been Received",
 }
 poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
-poster.send_message('Hello Beer!', options)
+poster.send_message('Hi there!', options)
 ```
 
 You can preset your options:
@@ -64,7 +64,7 @@ You can preset your options:
 poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
 poster.options[:icon] = 'http://example.com/icon.png'
 poster.options = {:icon => 'http://example.com/icon.png'}
-poster.send_message('Hello World!')
+poster.send_message('Hi there!')
 ```
 
 ## Supported Ruby Versions
