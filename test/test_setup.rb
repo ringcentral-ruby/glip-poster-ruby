@@ -9,7 +9,7 @@ class GlipPosterTest < Test::Unit::TestCase
   end
 
   def test_url
-    url = 'https://hooks.glip.com/webhook/11111111-2222-3333-4444-555555555555'
+    url = 'https://hooks.glip.com/webhook/11112222-3333-4444-5555-666677778888'
     poster = Glip::Poster.new(url)
     assert_equal url, poster.webhook_url
   end
