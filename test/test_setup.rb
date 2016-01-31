@@ -20,4 +20,14 @@ class GlipPosterTest < Test::Unit::TestCase
     res = poster.send_message('Hello World!')
     assert_equal 'Faraday::Response', res.class.name
   end
+
+  def test_raise
+    assert_raise do
+      poster = Glip::Poster.new
+    end
+
+    assert_raise do
+      poster = Glip::Poster.new('dead/beef')
+    end
+  end
 end
