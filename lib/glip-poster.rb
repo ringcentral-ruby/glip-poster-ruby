@@ -1,0 +1,1 @@
+require 'glip-poster/poster'

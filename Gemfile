@@ -1,0 +1,10 @@
+source ENV['GEM_SOURCE'] || 'https://rubygems.org'
+
+gem 'coveralls'
+gem 'faraday', '~> 0.9.0'
+gem 'faraday_middleware'
+gem 'logger'
+gem 'mocha'
+gem 'rake'
+gem 'simplecov'
+gem 'test-unit'
