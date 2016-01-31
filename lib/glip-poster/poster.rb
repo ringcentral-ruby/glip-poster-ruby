@@ -11,7 +11,7 @@ module Glip
     attr_accessor :http
 
     def initialize(webhook_url_or_id)
-      webhook_uri(webhook_url_or_id)
+      set_webhook_url(webhook_url_or_id)
 
       @options = {}
       
@@ -22,7 +22,7 @@ module Glip
       end
     end
 
-    def webhook_uri(webhook_url_or_id)
+    def set_webhook_url(webhook_url_or_id)
       if webhook_url_or_id.to_s !~ %r{/}
         @webhook_url = GLIP_WEBHOOK_BASE_URL + webhook_url_or_id
       elsif webhook_url_or_id =~ %r{^https?://}
@@ -33,14 +33,10 @@ module Glip
     end
 
     def send_message(message, opts={})
-      opts = @options.merge opts
-      opts[:body] = message
-
-      res = @http.post do |req|
+      return @http.post do |req|
         req.url @webhook_url
-        req.body = opts
+        req.body = @options.merge(opts).merge({body: message})
       end
-      return res
     end
   end
 end
