@@ -11,7 +11,7 @@ Glip Poster
 [![Docs][docs-rubydoc-svg]][docs-rubydoc-link]
 [![License][license-svg]][license-link]
 
-Simple gem to post messages on Glip (https://glip.com/) using webhooks.
+glip-poster is a simple gem to make your integration with Glip (https://glip.com/) easier. It supports only incoming communications (from you to Glip).
 
 ## Installation
 
@@ -29,6 +29,16 @@ $ bundle
 ```sh
 $ gem install glip-poster
 ```
+
+## Glip setup
+
+This gem will use a Incoming WebHook integration on Glip. First, you need to create a new Incoming Webhook integration. In Glip.com, click on 'Integrations' if the left column and then select the "Glip Webhooks" integration. After you select a conversation, a webhook URL will be displayed for you which will be used by this gem to post messages to. The URL looks like the following:
+
+```http
+https://hooks.glip.com/webhook/11112222-3333-4444-5555-666677778888
+```
+
+You can instantiate the `Glip::Poster` gem with the full URL or the webhook ID (GUID) only.
 
 ## Usage
 
