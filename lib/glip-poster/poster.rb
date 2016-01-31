@@ -20,9 +20,6 @@ module Glip
     end
 
     def webhook_uri(webhook_url_or_id)
-      unless webhook_url_or_id
-        raise 'must include webhook URL or id argument'
-      end
       if webhook_url_or_id.to_s !~ %r{/}
         @webhook_url = GLIP_WEBHOOK_BASE_URL + webhook_url_or_id
       elsif webhook_url_or_id =~ %r{^https?://}
