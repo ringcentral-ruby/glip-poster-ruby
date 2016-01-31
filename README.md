@@ -11,6 +11,8 @@ Glip Poster
 [![Docs][docs-rubydoc-svg]][docs-rubydoc-link]
 [![License][license-svg]][license-link]
 
+Simple gem to post messages on Glip (https://glip.com/) using webhooks.
+
 ## Installation
 
 ### Via Bundler
