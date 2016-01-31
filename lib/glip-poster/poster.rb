@@ -3,15 +3,18 @@ require 'faraday_middleware'
 
 module Glip
   class Poster
-    VERSION = '0.0.1'
+    VERSION = '0.0.2'
     GLIP_WEBHOOK_BASE_URL = 'https://hooks.glip.com/webhook/'
 
     attr_reader :webhook_url
+    attr_accessor :options
     attr_accessor :http
 
     def initialize(webhook_url_or_id)
       webhook_uri(webhook_url_or_id)
 
+      @options = {}
+      
       @http = Faraday.new(:url => GLIP_WEBHOOK_BASE_URL) do |faraday|
         faraday.request  :json
         faraday.response :logger
@@ -30,6 +33,7 @@ module Glip
     end
 
     def send_message(message, opts={})
+      opts = @options.merge opts
       opts[:body] = message
 
       res = @http.post do |req|

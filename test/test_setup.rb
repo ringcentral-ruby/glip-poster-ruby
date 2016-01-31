@@ -30,4 +30,13 @@ class GlipPosterTest < Test::Unit::TestCase
       poster = Glip::Poster.new('dead/beef')
     end
   end
+
+  def test_options
+    poster = Glip::Poster.new('deadbeef')
+
+    assert_equal true, poster.options.is_a?(Hash)
+
+    poster.options[:icon] = 'http://example.com/icon.png'
+    assert_equal 'http://example.com/icon.png', poster.options[:icon]
+  end
 end

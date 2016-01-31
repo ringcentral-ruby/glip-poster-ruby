@@ -30,9 +30,39 @@ $ gem install glip-poster
 
 ## Usage
 
+First you have to initialize your poster and then you can use `send_message` to send your message.
+
 ```ruby
 poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
 poster.send_message('Hello World!') # Faraday::Response
+```
+
+You can send text in Markdown:
+
+```ruby
+poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
+poster.send_message('* Location: [The Funky Buddha Lounge](http://www.thefunkybuddha.com)\n*Beer Advocate Rating: [99](http://tinyurl.com/psf4uzq)')
+```
+
+You can use an options array if you don't want to use the default settings.
+
+```ruby
+options => {
+  :icon": "http://example.com/icon.png",
+  :activity": "Activity Alert",
+  :title": "A New Incoming Message Has Been Received",
+}
+poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
+poster.send_message('Hello Beer!', options)
+```
+
+You can preset your options:
+
+```ruby
+poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
+poster.options[:icon] = 'http://example.com/icon.png'
+poster.options = {:icon => 'http://example.com/icon.png'}
+poster.send_message('Hello World!')
 ```
 
 ## Supported Ruby Versions
