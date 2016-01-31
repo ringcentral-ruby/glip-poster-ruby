@@ -60,9 +60,9 @@ You can use an options array if you don't want to use the default settings.
 
 ```ruby
 options = {
-  icon: "http://example.com/icon.png",
-  activity: "Activity Alert",
-  title: "A New Incoming Message Has Been Received"
+  icon: 'http://example.com/icon.png',
+  activity: 'Activity Alert',
+  title: 'A New Incoming Message Has Been Received'
 }
 poster = Glip::Poster.new(YOUR_WEBHOOK_URL)
 poster.send_message('Hi there!', options)
