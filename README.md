@@ -32,7 +32,7 @@ $ gem install glip-poster
 
 ## Glip setup
 
-This gem will use a incoming webHook integration on Glip. First, you need to create a new Glip webhook integration. In Glip.com, click on 'Integrations' if the left column and then select the "Glip Webhooks" integration. After you select a conversation, a webhook URL will be displayed for you which will be used by this gem to post messages to. The URL looks like the following:
+This gem uses an incoming webhook integration on Glip. To create a new Glip webhook integration, in Glip.com, click on 'Integrations' in the left column and then select the "Glip Webhooks" integration. After you select a conversation, a webhook URL will be presented which you will use with this gem to post messages to. The URL looks like the following:
 
 ```http
 https://hooks.glip.com/webhook/11112222-3333-4444-5555-666677778888
@@ -40,7 +40,7 @@ https://hooks.glip.com/webhook/11112222-3333-4444-5555-666677778888
 
 ## Usage
 
-First you have to initialize your poster and then you can use `send_message` to send your message. You must have a webhook URL configured in Glip using the "Glip Webhooks" integration.
+Initialize your poster and then call the `send_message` method to send your message. You must supply the webhook URL or webhook ID configured in the desired "Glip Webhooks" integration.
 
 ```ruby
 require 'glip-poster'
