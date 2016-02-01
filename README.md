@@ -32,7 +32,7 @@ $ gem install glip-poster
 
 ## Glip setup
 
-This gem uses an incoming webhook integration on Glip. To create a new Glip webhook integration, in Glip.com, click on 'Integrations' in the left column and then select the "Glip Webhooks" integration. After you select a conversation, a webhook URL will be presented which you will use with this gem to post messages to. The URL looks like the following:
+This gem uses an incoming webhook integration on Glip. To create a new Glip webhook integration, in Glip.com, click on "Integrations" in the left column and then select the "Glip Webhooks" integration. After you select a conversation, a webhook URL will be presented which you will use with this gem to post messages to. The URL looks like the following:
 
 ```http
 https://hooks.glip.com/webhook/11112222-3333-4444-5555-666677778888
