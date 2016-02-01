@@ -43,7 +43,7 @@ https://hooks.glip.com/webhook/11112222-3333-4444-5555-666677778888
 Initialize your poster and then call the `send_message` method to send your message. You must supply the webhook URL or webhook ID configured in the desired "Glip Webhooks" integration.
 
 ```ruby
-require 'glip-poster'
+require 'glip_poster' # note underscore
 
 poster = Glip::Poster.new(YOUR_WEBHOOK_URL) # or YOUR_WEBHOOK_ID (GUID)
 poster.send_message('Hi there!') # Faraday::Response
