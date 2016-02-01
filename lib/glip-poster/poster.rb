@@ -14,11 +14,11 @@ module Glip
       set_webhook_url(webhook_url_or_id)
 
       @options = {}
-      
+
       @http = Faraday.new(url: GLIP_WEBHOOK_BASE_URL) do |faraday|
-        faraday.request  :json
+        faraday.request :json
         faraday.response :logger
-        faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
+        faraday.adapter Faraday.default_adapter  # make requests with Net::HTTP
       end
     end
 
@@ -28,11 +28,11 @@ module Glip
       elsif webhook_url_or_id =~ %r{^https?://}
         @webhook_url = webhook_url_or_id
       else
-        raise 'must include webhook URL or id argument'
+        fail 'must include webhook URL or id argument'
       end
     end
 
-    def send_message(message, opts={})
+    def send_message(message, opts = {})
       return @http.post do |req|
         req.url @webhook_url
         req.body = @options.merge(opts).merge(body: message)

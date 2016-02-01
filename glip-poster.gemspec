@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/grokify/'
   s.licenses    = ['MIT']
   s.files       = Dir['lib/**/**/*'] # + Dir['bin/*']
-  s.files      += Dir['[A-Z]*']    + Dir['test/**/*']
+  s.files      += Dir['[A-Z]*'] + Dir['test/**/*']
   # s.files.reject! { |fn| fn.include? "CVS" }
   # s.required_ruby_version = '>= 1.8.7' # 1.8.7+ is tested
   s.add_dependency 'faraday', '~> 0.9', '>= 0.9'
