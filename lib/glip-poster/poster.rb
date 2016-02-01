@@ -15,7 +15,7 @@ module Glip
 
       @options = {}
       
-      @http = Faraday.new(:url => GLIP_WEBHOOK_BASE_URL) do |faraday|
+      @http = Faraday.new(url: GLIP_WEBHOOK_BASE_URL) do |faraday|
         faraday.request  :json
         faraday.response :logger
         faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
