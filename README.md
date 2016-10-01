@@ -77,7 +77,7 @@ poster.send_message('Hi there!')
 
 ## Supported Ruby Versions
 
-This library supports and is [tested against](https://travis-ci.org/grokify/glip-poster-ruby) the following Ruby implementations:
+This library supports and is [tested against](https://travis-ci.org/ringcentral-ruby/glip-poster-ruby) the following Ruby implementations:
 
 1. Ruby 2.3.0
 2. Ruby 2.2.0
@@ -89,7 +89,7 @@ This library supports and is [tested against](https://travis-ci.org/grokify/glip
 
 ## Releases
 
-Releases with release notes are availabe on [GitHub releases](https://github.com/grokify/glip-poster/releases). Release notes include a high level description of the release as well as lists of non-breaking and breaking changes.
+Releases with release notes are availabe on [GitHub releases](https://github.com/ringcentral-ruby/glip-poster-ruby/releases). Release notes include a high level description of the release as well as lists of non-breaking and breaking changes.
 
 ### Change Log
 
@@ -99,7 +99,7 @@ See [CHANGELOG.md](CHANGELOG.md)
 
 Project Repo
 
-* https://github.com/grokify/glip-poster-ruby
+* https://github.com/ringcentral-ruby/glip-poster-ruby
 
 Glip
 
@@ -107,7 +107,7 @@ Glip
 
 ## Contributing
 
-1. Fork it ( http://github.com/grokify/glip-poster-ruby/fork )
+1. Fork it ( http://github.com/ringcentral-ruby/glip-poster-ruby/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -117,17 +117,17 @@ Glip
  [gem-version-link]: http://badge.fury.io/rb/glip-poster
  [downloads-svg]: http://ruby-gem-downloads-badge.herokuapp.com/glip-poster
  [downloads-link]: https://rubygems.org/gems/glip-poster
- [build-status-svg]: https://api.travis-ci.org/grokify/glip-poster-ruby.svg?branch=master
- [build-status-link]: https://travis-ci.org/grokify/glip-poster-ruby
- [coverage-status-svg]: https://coveralls.io/repos/grokify/glip-poster-ruby/badge.svg?branch=master
- [coverage-status-link]: https://coveralls.io/r/grokify/glip-poster-ruby?branch=master
- [dependency-status-svg]: https://gemnasium.com/grokify/glip-poster-ruby.svg
- [dependency-status-link]: https://gemnasium.com/grokify/glip-poster-ruby
- [codeclimate-status-svg]: https://codeclimate.com/github/grokify/glip-poster-ruby/badges/gpa.svg
- [codeclimate-status-link]: https://codeclimate.com/github/grokify/glip-poster-ruby
- [scrutinizer-status-svg]: https://scrutinizer-ci.com/g/grokify/glip-poster-ruby/badges/quality-score.png?b=master
- [scrutinizer-status-link]: https://scrutinizer-ci.com/g/grokify/glip-poster-ruby/?branch=master
+ [build-status-svg]: https://api.travis-ci.org/ringcentral-ruby/glip-poster-ruby.svg?branch=master
+ [build-status-link]: https://travis-ci.org/ringcentral-ruby/glip-poster-ruby
+ [coverage-status-svg]: https://coveralls.io/repos/ringcentral-ruby/glip-poster-ruby/badge.svg?branch=master
+ [coverage-status-link]: https://coveralls.io/r/ringcentral-ruby/glip-poster-ruby?branch=master
+ [dependency-status-svg]: https://gemnasium.com/ringcentral-ruby/glip-poster-ruby.svg
+ [dependency-status-link]: https://gemnasium.com/ringcentral-ruby/glip-poster-ruby
+ [codeclimate-status-svg]: https://codeclimate.com/github/ringcentral-ruby/glip-poster-ruby/badges/gpa.svg
+ [codeclimate-status-link]: https://codeclimate.com/github/ringcentral-ruby/glip-poster-ruby
+ [scrutinizer-status-svg]: https://scrutinizer-ci.com/g/ringcentral-ruby/glip-poster-ruby/badges/quality-score.png?b=master
+ [scrutinizer-status-link]: https://scrutinizer-ci.com/g/ringcentral-ruby/glip-poster-ruby/?branch=master
  [docs-rubydoc-svg]: https://img.shields.io/badge/docs-rubydoc-blue.svg
  [docs-rubydoc-link]: http://www.rubydoc.info/gems/glip-poster/
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-link]: https://github.com/grokify/glip-poster-ruby/blob/master/LICENSE.txt
+ [license-link]: https://github.com/ringcentral-ruby/glip-poster-ruby/blob/master/LICENSE.txt
