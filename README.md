@@ -5,6 +5,7 @@ Glip Poster
 [![Build Status][build-status-svg]][build-status-link]
 [![Coverage Status][coverage-status-svg]][coverage-status-link]
 [![Dependency Status][dependency-status-svg]][dependency-status-link]
+[![Codacy Badge][codacy-svg]][codacy-link]
 [![Code Climate][codeclimate-status-svg]][codeclimate-status-link]
 [![Scrutinizer Code Quality][scrutinizer-status-svg]][scrutinizer-status-link]
 [![Downloads][downloads-svg]][downloads-link]
@@ -123,6 +124,8 @@ Glip
  [coverage-status-link]: https://coveralls.io/r/ringcentral-ruby/glip-poster-ruby?branch=master
  [dependency-status-svg]: https://gemnasium.com/ringcentral-ruby/glip-poster-ruby.svg
  [dependency-status-link]: https://gemnasium.com/ringcentral-ruby/glip-poster-ruby
+ [codacy-svg]: https://api.codacy.com/project/badge/Grade/2e50acdacece4f28bb239bd87a8ca6fd
+ [codacy-link]: https://www.codacy.com/app/grokify/glip-poster-ruby
  [codeclimate-status-svg]: https://codeclimate.com/github/ringcentral-ruby/glip-poster-ruby/badges/gpa.svg
  [codeclimate-status-link]: https://codeclimate.com/github/ringcentral-ruby/glip-poster-ruby
  [scrutinizer-status-svg]: https://scrutinizer-ci.com/g/ringcentral-ruby/glip-poster-ruby/badges/quality-score.png?b=master

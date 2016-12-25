@@ -22,13 +22,9 @@ class GlipPosterTest < Test::Unit::TestCase
   end
 
   def test_raise
-    assert_raise do
-      poster = Glip::Poster.new
-    end
+    assert_raise { Glip::Poster.new }
 
-    assert_raise do
-      poster = Glip::Poster.new('dead/beef')
-    end
+    assert_raise { Glip::Poster.new('dead/beef') }
   end
 
   def test_options
